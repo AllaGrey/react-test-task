@@ -1,8 +1,8 @@
 {
-  "name": "my-react-project-template",
+  "name": "react-test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AllaGrey.github.io/my-react-project-template",
+  "homepage": "https://AllaGrey.github.io/react-test-task",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -43,7 +43,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://AllaGrey.github.io/my-react-project-template"
+    "url": "https://AllaGrey.github.io/react-test-task"
   },
   "author": "AllaGrey",
   "license": "ISC"
