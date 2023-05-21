@@ -11,7 +11,7 @@ export const Layout = () => {
       </Header>
       <Suspense fallback={<p>Loading...</p>}>
         <main>
-          <Outlet />
+          <Outlet/>
         </main>      
         <Footer>
           <FooterDetails href='https://github.com/AllaGrey' noopener noreferrer nofollow >Created by Alla Grey </FooterDetails>

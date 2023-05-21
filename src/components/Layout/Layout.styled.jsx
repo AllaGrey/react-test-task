@@ -23,8 +23,6 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const Footer = styled.footer`
-/* margin-left: -30px;
-margin-right: -30px; */
 height: 30px;
 background-color: #471CA9;
 padding: 10px;
