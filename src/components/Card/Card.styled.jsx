@@ -41,8 +41,6 @@ export const LineImage = styled.img`
 export const EllipseImage = styled.img`
     position: absolute;
     top: 178px;
-    /* left: 150px; */
-    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
