@@ -23,7 +23,7 @@ export const FilterMenuContainer = styled.div`
     
 `
 
-export const SelectorList = styled.li`
+export const SelectorList = styled.ul`
     list-style: none;
     text-decoration: none;
 `

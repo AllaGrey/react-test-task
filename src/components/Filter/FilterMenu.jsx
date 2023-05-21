@@ -12,7 +12,6 @@ export const FilterMenu = () => {
     
 
     const onFilterSelect = (e) => {
-        console.log(e.target.id)
         const selectedFilter = e.target.id
         const filterUpdate =  {page: 1, isFollowing: selectedFilter}
         dispatch(filterUsers(filterUpdate))

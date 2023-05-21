@@ -9,7 +9,6 @@ export const CardList = () => {
 
     const filter = useSelector(state => state.filter)
     const dispatch = useDispatch()
-    console.log(filter, 'filter')
 
     const { data, error, isLoading, refetch } = useGetAllUsersQuery(filter)
 

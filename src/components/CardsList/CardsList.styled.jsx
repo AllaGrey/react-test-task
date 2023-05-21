@@ -17,7 +17,6 @@ export const Button = styled.button`
     height: 30px;
     width: 120px;
     border-radius: 10px;
-    /* padding: 14px 28px 14px 28px; */
     border: none;
     background-color: #EBD8FF;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);

@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { Header, StyledNavLink, Footer, FooterDetails } from './Layout.styled';
+
 export const Layout = () => {
   return (
     <div>
@@ -8,9 +9,10 @@ export const Layout = () => {
         <StyledNavLink to="/">Home</StyledNavLink>
         <StyledNavLink to="/tweets">Tweets</StyledNavLink>
       </Header>
-      <Suspense fallback={null}>
-        <Outlet />
-      
+      <Suspense fallback={<p>Loading...</p>}>
+        <main>
+          <Outlet />
+        </main>      
         <Footer>
           <FooterDetails href='https://github.com/AllaGrey' noopener noreferrer nofollow >Created by Alla Grey </FooterDetails>
         </Footer>

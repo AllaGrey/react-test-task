@@ -13,6 +13,7 @@ font-weight: 600;
 color: #373737;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
+cursor: pointer;
 
 
 &:hover {
