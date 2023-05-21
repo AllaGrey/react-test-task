@@ -3,10 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HomePageSection = styled.section`
-    background-image: url({cool-background});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
     text-align: center;
     padding: 200px 0;
     margin: 0 -15px;
