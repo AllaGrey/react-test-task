@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { Header, StyledNavLink, Footer, FooterDetails } from './Layout.styled';
+import { Puff } from 'react-loader-spinner';
 
 export const Layout = () => {
   return (
@@ -9,7 +10,18 @@ export const Layout = () => {
         <StyledNavLink to="/">Home</StyledNavLink>
         <StyledNavLink to="/tweets">Tweets</StyledNavLink>
       </Header>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Puff
+        height="80"
+        width="80"
+        radius={1}
+        ariaLabel="puff-loading"
+        wrapperStyle={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+        color='#5736A3'
+        visible={true}
+        />}>
         <main>
           <Outlet/>
         </main>      

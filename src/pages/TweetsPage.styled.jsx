@@ -6,8 +6,7 @@ export const TweetsPageSection = styled.section`
 `
 
 export const LinkBack = styled(Link)`
-    width: 196px;
-    height: 50px;
+    height: 20px;
     border-radius: 10px;
     text-align: center;
     background-color: #EBD8FF;
@@ -19,6 +18,9 @@ export const LinkBack = styled(Link)`
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     transition-duration: 250ms;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 5;
+    top: 60px;
 
     &:hover, :focus {
         background-color: #5CD3A8;

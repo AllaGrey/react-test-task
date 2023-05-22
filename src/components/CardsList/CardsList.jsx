@@ -4,6 +4,7 @@ import { useSelector } from "react-redux"
 import { CardListStyled, PaginationButtons, Button, InformationMessage } from "./CardsList.styled"
 import { useDispatch } from "react-redux"
 import { filterUsers } from "redux/filterSlice"
+import { Puff } from "react-loader-spinner"
 
 export const CardList = () => {
 
@@ -13,7 +14,17 @@ export const CardList = () => {
     const { data, error, isLoading, refetch } = useGetAllUsersQuery(filter)
 
     
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <Puff
+        height="80"
+        width="80"
+        radius={1}
+        ariaLabel="puff-loading"
+        wrapperStyle={{
+            display: 'flex',
+            justifyContent: 'center',
+        }}
+        color='#5736A3'
+        visible={true}/>
 
     if(error) return <p>Ooops...Something wrong</p>
 

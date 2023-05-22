@@ -33,7 +33,7 @@ export const TweeTCard = ({user, refetch}) => {
                 <InformationDetails>{tweets} TWEETS</InformationDetails>
                 <InformationDetails>{formatFollowers} FOLLOWERS</InformationDetails>
             </InformationContainer>
-            <FollowingButton user={user} refetch={ refetch} />
+            <FollowingButton user={user} refetch={refetch} />
         </CardContainer>
     )
 }

@@ -15,6 +15,7 @@ export const FilterMenuContainer = styled.div`
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     transition-duration: 250ms;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 
     &:hover, :focus {
         background-color: ${props => (props.isOpen ? '#EBD8FF' : '#5CD3A8')};
@@ -26,6 +27,7 @@ export const FilterMenuContainer = styled.div`
 export const SelectorList = styled.ul`
     list-style: none;
     text-decoration: none;
+    
 `
 
 export const Selector = styled.li`
